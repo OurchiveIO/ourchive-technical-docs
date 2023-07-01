@@ -1,6 +1,12 @@
 ---
 title: Getting Started
 weight: -20
+resources:
+  - name: dr-manhattan
+    src: "dr_manhattan.jpg"
+    title: Dr Manhattan
+    params:
+      credits: "Don't worry about it."
 ---
 
 This page describes installing and running Ourchive locally for the purposes of development.
@@ -13,33 +19,34 @@ If you are planning to install Ourchive as a website, please refer to the [admin
 
 ## Prerequisites
 
+{{< hint type=note >}}
+**Info**\
+The below instructions assume you are installing on an Ubuntu machine. Similar commands should work for any Unix-based machine but are beyond the scope of this documentation.
+{{< /hint >}}
+
 - Python 3.x+
 - Postgres 15+ [docs](https://www.postgresql.org/docs/15/index.html)
 - Python 3.x+ dev tools
 
 ### Install prerequisites
 
-{{< hint type=note >}}
-**Info**\
-The below instructions assume you are installing on an Ubuntu machine. Similar comments should work for any Unix-based machine but are beyond the scope of this documentation.
-{{< /hint >}}
-
 {{< hint type=important >}}
-**Warning**\
+**Regarding Virtual Environments**\
 There's more than one way to climb a tree and there's more than one way to get a working Python development environment going. The below relies heavily upon best practices described in [Python's documentation](https://docs.python.org/3/library/venv.html).
 {{< /hint >}}
 
 
 ```shell
 # install python 
-sudo apt-get update && sudo apt-get upgrade
-sudo apt-get install python3.11
+sudo apt-get update && sudo apt-get upgrade && sudo apt-get install python3.11
 
 # install python dev tools
 sudo apt-get install python3.11-dev
 
 # install postgres
 sudo apt install postgresql postgresql-contrib
+
+# start the service
 sudo systemctl start postgresql.service
 
 # log into postgres
@@ -48,10 +55,20 @@ sudo -u postgres psql
 # create database and user. NOTE: the below assumes you are in
 # a development environment and that you are using Postgres version 15
 # or higher.
+
+# create the database
 CREATE DATABASE ourchive_db;
+
+# create the Ourchive user. This should match the information in settings.py.
 CREATE USER ourchive WITH PASSWORD 'ourchive';
+
+# grant privileges to the ourchive user
 GRANT ALL PRIVILEGES ON DATABASE ourchive_db TO ourchive;
+
+# connect to the db
 \c ourchive_db postgres
+
+# grant schema permissions
 GRANT ALL ON SCHEMA public TO ourchive;
 ```
 
@@ -74,8 +91,7 @@ If you have not created a virtual environment before, we strongly recommend revi
 git clone https://github.com/c-e-p/ourchive
 
 # enter repo & create virtual environment
-cd ourchive
-python3.11 -m venv venv
+cd ourchive && python3.11 -m venv venv
 
 # activate the virtual environment
 source venv/bin/activate
@@ -84,8 +100,7 @@ source venv/bin/activate
 2. Install requirements
 
 ```shell
-cd ourchive_app
-pip install -r requirements.txt
+cd ourchive_app && pip install -r requirements.txt
 ```
 
 #### Troubleshooting
@@ -104,10 +119,42 @@ If you have a different error, we strongly recommend searching for the error and
 
 ### Load fixture data
 
-### Update settings
+{{< hint type=important >}}
+**Do not skip this step!**\
+Ourchive is a configurable app. You need to load settings data or the app will not function properly!
+{{< /hint >}}
+
+Ourchive ships with fixture data for some necessary configurations and for convenience of development. You **must** load settings. You can load works, bookmarks, etc for the convenience of starting with a pre-loaded environment.
+
+```shell
+# load the fixture data
+python manage.py loaddata api/fixtures/ourchivesettings.yaml
+```
 
 ### Run migrations
 
-### Run server
+```shell
+# run migrations
+python manage.py migrate
+```
 
-## Using the theme
+### Run server
+```shell
+# run migrations
+python manage.py runserver
+```
+
+### That's it
+
+You should now have a working installation of Ourchive. 
+
+### Troubleshooting
+
+"But I don't", you cry. Not to worry, it happens to the best of us. Here are some basic troubleshooting tips:
+
+1. Follow the error: Google the console and/or site output. Common issues include database connectivity, pip versioning issues, or python devtools problems.
+2. Delete everything and start over: Ourchive is a fairly simple app right now with minimal external dependencies. 
+
+![Dr Manhattan meme with the text "just keep deleting your VM and reinstalling, it'll work this time for sure"](/dr_manhattan.jpg)
+
+3. [Open an issue](https://github.com/c-e-p/ourchive/issues) with the Ourchive team. We want to help!

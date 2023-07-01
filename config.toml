@@ -59,12 +59,12 @@ enableRobotsTXT = true
 
   # (Optional, default none) Set source repository location. Used for 'Edit page' links.
   # You can also specify this parameter per page in front matter.
-  geekdocRepo = "https://github.com/thegeeklab/hugo"
+  geekdocRepo = ""
 
   # (Optional, default none) Enable 'Edit page' links. Requires 'geekdocRepo' param
   # and the path must point to the parent directory of the 'content' folder.
   # You can also specify this parameter per page in front matter.
-  geekdocEditPath = "edit/main/exampleSite"
+  geekdocEditPath = ""
 
   # (Optional, default true) Enables search function with flexsearch.
   # Index is built on the fly and might slow down your website.
@@ -73,15 +73,15 @@ enableRobotsTXT = true
   # (Optional, default false) Display search results with the parent folder as prefix. This
   # option allows you to distinguish between files with the same name in different folders.
   # NOTE: This parameter only applies when 'geekdocSearch = true'.
-  geekdocSearchShowParent = true
+  geekdocSearchShowParent = false
 
   # (Optional, default none) Add a link to your Legal Notice page to the site footer.
   # It can be either a remote url or a local file path relative to your content directory.
-  geekdocLegalNotice = "https://blog.example.com/legal"
+  geekdocLegalNotice = ""
 
   # (Optional, default none) Add a link to your Privacy Policy page to the site footer.
   # It can be either a remote url or a local file path relative to your content directory.
-  geekdocPrivacyPolicy = "/privacy"
+  geekdocPrivacyPolicy = ""
 
   # (Optional, default true) Add an anchor link to headlines.
   geekdocAnchor = true

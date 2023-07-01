@@ -20,7 +20,7 @@ This documentation should help you get up and running with developing Ourchive.
 
 **If you are planning to install Ourchive as a website, please refer to the [admin docs](https://changeme).**
 
-{{< button size="large" relref="usage/getting-started/" >}}Getting Started{{< /button >}}
+{{< button class="getting-started-button" size="large" relref="usage/getting-started/"  >}}Environment Setup{{< /button >}}
 
 ## What is Ourchive?
 
