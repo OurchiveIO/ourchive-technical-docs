@@ -24,7 +24,7 @@ If you are planning to install Ourchive as a website, please refer to the [admin
 {{< alert icon="👉" >}} 
 **Heads Up**
 
-The below instructions assume you are installing on an Ubuntu machine. Similar commands should work for any Unix-based machine but are beyond the scope of this documentation." 
+The below instructions assume you are installing on an Ubuntu machine. Similar commands should work for any Unix-based machine but are beyond the scope of this documentation.
 {{</ alert >}}
 
 - Python 3.x+
@@ -34,7 +34,7 @@ The below instructions assume you are installing on an Ubuntu machine. Similar c
 {{< alert icon="👉" >}} 
 **Regarding Virtual Environments**
 
-There's more than one way to climb a tree and there's more than one way to get a working Python development environment going. The below relies heavily upon best practices described in [Python's documentation](https://docs.python.org/3/library/venv.html)."
+There's more than one way to climb a tree and there's more than one way to get a working Python development environment going. The below relies heavily upon best practices described in [Python's documentation](https://docs.python.org/3/library/venv.html).
 
 {{< /alert >}}
 
@@ -127,7 +127,7 @@ If you have a different error, we strongly recommend searching for the error and
 {{< alert icon="👉" >}} 
 **Do not skip this step!**
 
-Ourchive is a configurable app. You need to load settings data or the app will not function properly!"
+Ourchive is a configurable app. You need to load settings data or the app will not function properly!
 {{</ alert >}}
 
 Ourchive ships with fixture data for some necessary configurations and for convenience of development. You **must** load settings. You can load works, bookmarks, etc for the convenience of starting with a pre-loaded environment.
