@@ -11,7 +11,7 @@ Ourchive uses Django Rest Framework and auto-generated API documentation. Despit
 
 ## API Docs
 
-You can access API docs here. [tk add prod link]
+You can access API docs on our [demo site](https://getourchive.io/api/redoc/).
 
 ## Permissions
 

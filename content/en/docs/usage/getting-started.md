@@ -13,7 +13,7 @@ resources:
 
 This page describes installing and running Ourchive locally for the purposes of development.
 
-If you are planning to install Ourchive as a website, please refer to the [admin docs](https://changeme).
+If you are planning to install Ourchive as a website, please refer to the [admin docs](https://docs.getourchive.io).
 
 <!--more-->
 
@@ -105,7 +105,7 @@ source venv/bin/activate
 2. Install requirements
 
 ```shell
-cd ourchive_app && pip install -r requirements.txt
+cd ourchive_app && pip install -r requirements.txt && pip install -r importer_requirements.txt
 ```
 
 #### Troubleshooting
@@ -135,6 +135,11 @@ Ourchive ships with fixture data for some necessary configurations and for conve
 ```shell
 # load the fixture data
 python manage.py loaddata api/fixtures/ourchivesettings.yaml
+python manage.py loaddata api/fixtures/attributetype.yaml
+python manage.py loaddata api/fixtures/attributevalue.yaml
+python manage.py loaddata api/fixtures/notificationtype.yaml
+python manage.py loaddata api/fixtures/tagtype.yaml
+python manage.py loaddata api/fixtures/worktype.yaml
 ```
 
 ## Run migrations
@@ -163,4 +168,4 @@ You should now have a working installation of Ourchive.
 
 ![Dr Manhattan meme with the text "just keep deleting your VM and reinstalling, it'll work this time for sure"](/images/dr_manhattan.jpg)
 
-3. [Open an issue](https://github.com/c-e-p/ourchive/issues) with the Ourchive team. We want to help!
+3. [Open an issue](https://github.com/c-e-p/ourchive/issues/new/choose) with the Ourchive team. We want to help!

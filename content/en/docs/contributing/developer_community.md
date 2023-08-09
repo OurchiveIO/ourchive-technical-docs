@@ -11,11 +11,9 @@ weight: 610
 toc: true
 ---
 
-* [Discord](https://discord.gg/MWhChSHTkz): real-time support, with dedicated channels for developers, admins, and users.
+* [Mastodon](https://federatedfandom.net/@ourchive): real-time questions and updates for MVP work.
 
-* [Forum](tk): for troubleshooting questions, feature brainstorming, or other conversations that are more suited for a forum.
-
-* [Mailing list](tk): for staying up to date with a weekly summary of news.
+* [Mailing list](https://docs.getourchive.io/#/portal/): for staying up to date with a weekly summary of news.
 
 ## Code
 

@@ -10,7 +10,7 @@ description = "Technical documentation for Ourchive, a modern and flexible open-
 # docsVersion = "0.3"
 
 ## Open Graph
-images = ["doks.png"]
+images = [""]
 ogLocale = "en_US"
 domainTLD = "developer.getourchive.io"
 titleHome = "Ourchive Developer Documentation"
@@ -22,15 +22,15 @@ schemaName = "Ourchive"
 schemaAuthor = "Elena"
 schemaAuthorGitHub = "https://github.com/c-e-p"
 schemaLocale = "en-US"
-schemaLogo = "logo-doks.png"
+schemaLogo = ""
 schemaLogoWidth = 512
 schemaLogoHeight = 512
-schemaImage = "doks.png"
+schemaImage = ""
 schemaImageWidth = 1280
 schemaImageHeight = 640
 schemaLinkedIn = ""
 schemaGitHub = "https://github.com/c-e-p/ourchive"
-schemaSection = "blog"
+schemaSection = "docs"
 
 ## Sitelinks Search Box
 siteLinksSearchBox = false

@@ -10,16 +10,16 @@ Thank you for wanting to contribute! While we are always happy to have more peop
 
 ## Bug Fixes
 
-We welcome any & all bug fixes. Our bug tracker can be found on [GitHub](https://changeme). Anything in the 'To Do' column should have reproduction steps and clear acceptance criteria. When you've fixed the bug, create a PR for review.
+We welcome any & all bug fixes. We use [GitHub issues](https://github.com/c-e-p/ourchive/issues/) for bug tracking. Once we've released MVP (target date Sept 30), anything in the 'To Do' column should have reproduction steps and clear acceptance criteria. When you've fixed the bug, create a PR for review.
 
 ## New Features
 
 We are just a few people doing this on nights & weekends, so our development lifecycle is a bit loosey-goosey. Our process looks like: 
 
 1. Brainstorm privately or accept proposals from our community
-2. Add the proposed feature to our [Idea Board](tk)
-3. Decide to include it in the project; add an issue to to our ['New' lane](tk)
-4. Add acceptance criteria to the feature; move to the ['To Do' lane](tk)
+2. Add the proposed feature to our [Idea Board](https://github.com/users/c-e-p/projects/4)
+3. Decide to include it in the project; tag the issue accordingly
+4. Add acceptance criteria to the feature; tag with release number
 5. Build the feature
 
 Anything in Step 4 would be a 'new feature' and you are welcome to build it! 
