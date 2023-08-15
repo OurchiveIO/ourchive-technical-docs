@@ -140,12 +140,7 @@ Ourchive ships with fixture data for some necessary configurations and for conve
 
 ```shell
 # load the fixture data
-python manage.py loaddata api/fixtures/ourchivesettings.yaml
-python manage.py loaddata api/fixtures/attributetype.yaml
-python manage.py loaddata api/fixtures/attributevalue.yaml
-python manage.py loaddata api/fixtures/notificationtypes.yaml
-python manage.py loaddata api/fixtures/tagtype.yaml
-python manage.py loaddata api/fixtures/worktype.yaml
+./load-fixtures.sh
 ```
 
 ## Run migrations
