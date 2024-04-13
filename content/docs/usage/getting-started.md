@@ -11,6 +11,12 @@ If you are planning to install Ourchive as a website, please refer to the [admin
 
 <!--more-->
 
+# Local Development with Docker
+
+If you would like to do development with Docker containers, this is currently supported. Please visit [Developing with Docker]({{<ref "docker-development.md">}}).
+
+
+# Local Development Native
 
 ## Prerequisites
 
@@ -133,13 +139,7 @@ Ourchive ships with fixture data for some necessary configurations and for conve
 
 ```bash
 # load the fixture data
-python manage.py loaddata api/fixtures/ourchivesettings.yaml
-python manage.py loaddata api/fixtures/attributetype.yaml
-python manage.py loaddata api/fixtures/attributevalue.yaml
-python manage.py loaddata api/fixtures/notificationtype.yaml
-python manage.py loaddata api/fixtures/tagtype.yaml
-python manage.py loaddata api/fixtures/worktype.yaml
-python manage.py loaddata etl/fixtures/objectmapping.yaml
+./load-fixtures.sh
 ```
 
 ## Run server
