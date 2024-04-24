@@ -73,6 +73,13 @@ GRANT ALL PRIVILEGES ON DATABASE ourchive_db TO ourchive;
 
 # grant schema permissions
 GRANT ALL ON SCHEMA public TO ourchive;
+
+# exit from the database
+\q
+
+# this tells the system to create the trigram extension when a new database is created. this allows search
+# integration tests to pass.
+psql -d template1 -c "CREATE EXTENSION pg_trgm;" -U ourchive
 ```
 
 ### Set up virtual environment
