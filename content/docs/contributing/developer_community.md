@@ -18,5 +18,6 @@ toc: true
 ## Code
 
 * [GitHub](https://github.com/c-e-p/ourchive)
+* [Project Board](https://planning.ourchive.io/project/ourchive-beta/kanban)
 * [Open an issue](https://github.com/c-e-p/ourchive/issues/new/choose)
 * [Feature PR](https://github.com/c-e-p/ourchive/compare/development...main?template=pr_feature_template.md)

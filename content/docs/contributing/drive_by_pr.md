@@ -17,8 +17,8 @@ We welcome any & all bug fixes. We use [GitHub issues](https://github.com/c-e-p/
 We are just a few people doing this on nights & weekends, so our development lifecycle is a bit loosey-goosey. Our process looks like: 
 
 1. Brainstorm privately or accept proposals from our community
-2. Add the proposed feature to our [Idea Board](https://github.com/users/c-e-p/projects/4)
-3. Decide to include it in the project; tag the issue accordingly
+2. Add the proposed feature to our [feature request project](https://planning.ourchive.io/project/ourchive-feature-requests/kanban)
+3. Decide to include it in the project; move to our [beta project](https://planning.ourchive.io/project/ourchive-beta/timeline) and tag the issue accordingly
 4. Add acceptance criteria to the feature; tag with release number
 5. Build the feature
 
