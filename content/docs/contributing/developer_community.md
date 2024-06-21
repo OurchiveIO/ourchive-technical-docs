@@ -7,9 +7,11 @@ images: []
 menu:
   docs:
     parent: "contributing"
-weight: 80
+weight: 12
 toc: true
 ---
+
+## Useful Links
 
 * [Mastodon](https://federatedfandom.net/@ourchive): real-time questions and updates for MVP work.
 
@@ -17,7 +19,7 @@ toc: true
 
 ## Code
 
-* [GitHub](https://github.com/c-e-p/ourchive)
+* [GitHub](https://github.com/OurchiveIO/ourchive)
 * [Project Board](https://planning.ourchive.io/project/ourchive-beta/kanban)
-* [Open an issue](https://github.com/c-e-p/ourchive/issues/new/choose)
-* [Feature PR](https://github.com/c-e-p/ourchive/compare/development...main?template=pr_feature_template.md)
+* [Open an issue](https://github.com/OurchiveIO/ourchive/issues/new/choose)
+* [Feature PR](https://github.com/OurchiveIO/ourchive/compare/development...main?template=pr_feature_template.md)

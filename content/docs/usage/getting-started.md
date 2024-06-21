@@ -1,7 +1,7 @@
 ---
 title: "Getting Started"
 draft: false
-weight: 10
+weight: 1
 toc: true
 ---
 
@@ -98,7 +98,7 @@ If you have not created a virtual environment before, we strongly recommend revi
 
 ```bash
 # clone the repo
-git clone https://github.com/c-e-p/ourchive
+git clone https://github.com/OurchiveIO/ourchive
 
 # enter repo & create virtual environment
 cd ourchive && python3.11 -m venv venv
@@ -110,7 +110,7 @@ source venv/bin/activate
 2. Install requirements
 
 ```bash
-cd ourchive_app && pip install -r requirements.txt && pip install -r importer_requirements.txt
+cd ourchive_app && pip install -r requirements.txt
 ```
 
 #### Troubleshooting
@@ -165,6 +165,6 @@ You should now have a working installation of Ourchive.
 
 1. Follow the error: Google the console and/or site output. Common issues include database connectivity, pip versioning issues, or python devtools problems.
 2. Delete everything and start over: Ourchive is a fairly simple app right now with minimal external dependencies. Sometimes a clean reinstall can help.
-3. [Open an issue](https://github.com/c-e-p/ourchive/issues/new/choose) with the Ourchive team. We want to help!
+3. [Open an issue](https://github.com/OurchiveIO/ourchive/issues/new/choose) with the Ourchive team. We want to help!
 
 {{< img loading="eager" fetchpriority="high" src="dr_manhattan.jpg" alt="Dr Manhattan meme with the text 'just keep deleting your venv and reinstalling, it'll work this time for sure'" >}}

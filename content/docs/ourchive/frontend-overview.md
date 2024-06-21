@@ -1,6 +1,6 @@
 ---
-title: Frontend Overview
-weight: 40
+title: "Frontend"
+weight: 5
 ---
 
 Ourchive has a standard Django frontend. Currently, we don't use class-based views; this may change as the project matures.
@@ -15,4 +15,4 @@ As Ourchive matured towards MVP, we began adding translation tags. I18n is a wor
 
 ## Tests
 
-Ourchive has a basic set of frontend unit tests, meant to validate data transformations/abstractions and provide a baseline level of smoke testing. You can find those in the `tests` folder.
+See [Testing]({{<ref "testing-overview.md">}}) for more details.

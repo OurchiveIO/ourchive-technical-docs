@@ -1,6 +1,6 @@
 ---
-title: Plugins Overview
-weight: 60
+title: "Plugins"
+weight: 6
 ---
 
 ## Search

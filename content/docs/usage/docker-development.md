@@ -1,7 +1,7 @@
 ---
 title: "Developing with Docker"
 draft: false
-weight: 25
+weight: 3
 toc: true
 ---
 

@@ -1,6 +1,6 @@
 ---
-title: API Overview
-weight: 30
+title: "API"
+weight: 4
 toc: true
 ---
 
@@ -9,13 +9,13 @@ Ourchive uses Django Rest Framework and auto-generated API documentation. Despit
 <!--more-->
 
 
-## API Docs
+## Docs
 
-You can access API docs on our [demo site](https://ourchive.io/api/redoc/).
+You can access API docs on our <a href="https://ourchive.io/api/redoc/" target="_blank" title="API docs">beta site</a>.
 
 ## Permissions
 
-Ourchive has a number of custom permissions, including permissions based on admin settings like Registration Permitted. All permissions are centralized in permissions.py and follow the DRF documentation's examples.
+Ourchive has a number of custom permissions, including permissions based on admin settings like Registration Permitted. All permissions are centralized in `permissions.py` and follow the DRF documentation's examples.
 
 ## CRUD Customization
 
