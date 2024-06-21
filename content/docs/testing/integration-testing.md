@@ -43,11 +43,11 @@ python manage.py runserver --settings=ourchive_app.settings.integration
 
 And view the generated data.
 
-{{< callout context="note" title="Note" >}} 
+{{< callout context="note" title="Note" icon="info-circle"  >}} 
 You can generate more data by running the `createintegrationtestdata` command yourself:
 
 ```bash
-python manage.py createintegrationtestdata --settings=ourchive_app.settings.integration
+python manage.py createintegrationtestdata -s y --settings=ourchive_app.settings.integration
 ```
 
 The `-s` flag tells the command to skip creating unique data like users and tag types, but will create more chives, admin info, etc. This can be useful if you're testing something like search pagination. Use 
@@ -78,7 +78,7 @@ cd ourchive-e2e-tests
 npm install
 ```
 
-{{< callout context="note" title="Note" >}} 
+{{< callout context="note" title="Note" icon="info-circle">}} 
 Current config assumes you're using the default Django `runserver` URL, `http://127.0.0.1:8000/`. If you're not, just update `cypress.config.js` with your URL.
 {{</ callout >}}
 
