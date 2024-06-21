@@ -95,6 +95,8 @@ Open `cypress.env.json` and update the variables if you want.
 
 **facetFilter**: The checkbox filter used to test faceted filtering. Default is one of our generated data's work types: "Fic".
 
+**smokeTestUser**: A user who has collections, series, and anthologies - IOW, a user with a rich set of chives. Since data is generated randomly this keeps tests from failing. Will eventually be replaced by navigation when series and anthologies are included in search results.
+
 
 Run Cypress:
 
